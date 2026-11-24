@@ -198,6 +198,7 @@ helm version
 
 Helm is the package manager we will use for NGINX Ingress and Prometheus stack installation.
 
+
 Verify Kubernetes:
 -------------------
 
