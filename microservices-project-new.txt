@@ -474,7 +474,7 @@ Replace with your Docker Hub username.
 
 docker login
 
-export DOCKER_USER=trainerreyaz
+export DOCKER_USER=kunaljadhav1625
 export IMAGE_TAG=v1
 
 echo $DOCKER_USER
@@ -761,7 +761,7 @@ Open ELB
 
 http://af55bf9c5a56942e1988269869f8e102-1861528970.ap-south-1.elb.amazonaws.com
 
-Login --> Register --> It says, Hi Reyaz 
+Login --> Register --> It says, Hi Kunal 
 
 
 
@@ -1206,12 +1206,12 @@ vi frontend/src/main.jsx
 change something ..
 
 
-docker build -t trainerreyaz/cloudcart-frontend:v9 frontend
-docker push trainerreyaz/cloudcart-frontend:v9
+docker build -t kunaljadhav1625/cloudcart-frontend:v9 frontend
+docker push kunaljadhav1625/cloudcart-frontend:v9
 
 kubectl set image deployment/frontend \
   -n ecommerce \
-  frontend=trainerreyaz/cloudcart-frontend:v9
+  frontend=kunaljadhav1625/cloudcart-frontend:v9
 
 kubectl rollout status deployment/frontend -n ecommerce
 
@@ -1249,8 +1249,8 @@ Register user:
 curl -X POST $APP_URL/api/auth/register \
   -H "Content-Type: application/json" \
   -d '{
-    "name": "Reyaz",
-    "email": "reyaz@example.com",
+    "name": "Kunal",
+    "email": "Kunal@example.com",
     "password": "password123"
   }'
 
@@ -1259,7 +1259,7 @@ Login:
 curl -X POST $APP_URL/api/auth/login \
   -H "Content-Type: application/json" \
   -d '{
-    "email": "reyaz@example.com",
+    "email": "Kunal@example.com",
     "password": "password123"
   }'
 
